@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ManyToOneAssociationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ManyToOneAssociationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.ohgiraffers.associationmapping.section01.manytoone.html">com.ohgiraffers.associationmapping.section01.manytoone</a> &gt; ManyToOneAssociationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.899s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">66%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="manyToOneInsertTest(int, String, int, int, String, String)[1]"></a>
+<h3 class="failures">[1] menuCode=123, menuName=돈가스 스파게티, menuPrice=30000, categoryCode=123, categoryName=퓨전분식, orderableStatus=Y</h3>
+<span class="code">
+<pre>org.opentest4j.AssertionFailedError: Unexpected exception thrown: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry '123' for key 'tbl_category.PRIMARY'] [insert into tbl_category (category_name,ref_category_code,category_code) values (?,?,?)]; SQL [insert into tbl_category (category_name,ref_category_code,category_code) values (?,?,?)]; constraint [tbl_category.PRIMARY]
+	at app//org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at app//org.junit.jupiter.api.AssertDoesNotThrow.createAssertionFailedError(AssertDoesNotThrow.java:84)
+	at app//org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:53)
+	at app//org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:36)
+	at app//org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3168)
+	at app//com.ohgiraffers.associationmapping.section01.manytoone.ManyToOneAssociationTest.manyToOneInsertTest(ManyToOneAssociationTest.java:115)
+	at java.base@17.0.11/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base@17.0.11/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base@17.0.11/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base@17.0.11/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base@17.0.11/java.util.stream.Streams$StreamBuilderImpl.forEachRemaining(Streams.java:411)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base@17.0.11/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base@17.0.11/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base@17.0.11/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base@17.0.11/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base@17.0.11/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base@17.0.11/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base@17.0.11/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base@17.0.11/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base@17.0.11/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base@17.0.11/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base@17.0.11/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base@17.0.11/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
+	at java.base@17.0.11/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base@17.0.11/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base@17.0.11/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base@17.0.11/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base@17.0.11/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base@17.0.11/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base@17.0.11/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at java.base@17.0.11/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base@17.0.11/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry '123' for key 'tbl_category.PRIMARY'] [insert into tbl_category (category_name,ref_category_code,category_code) values (?,?,?)]; SQL [insert into tbl_category (category_name,ref_category_code,category_code) values (?,?,?)]; constraint [tbl_category.PRIMARY]
+	at app//org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
+	at app//org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at app//org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:566)
+	at app//org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:795)
+	at app//org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:758)
+	at app//org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:676)
+	at app//org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:426)
+	at app//org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at app//org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at app//org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at app//com.ohgiraffers.associationmapping.section01.manytoone.ManyToOneService$$SpringCGLIB$$0.registMenu(&lt;generated&gt;)
+	at app//com.ohgiraffers.associationmapping.section01.manytoone.ManyToOneAssociationTest.lambda$manyToOneInsertTest$0(ManyToOneAssociationTest.java:116)
+	at app//org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:49)
+	... 48 more
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [Duplicate entry '123' for key 'tbl_category.PRIMARY'] [insert into tbl_category (category_name,ref_category_code,category_code) values (?,?,?)]
+	at app//org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:62)
+	at app//org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at app//org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at app//org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at app//org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.performNonBatchedMutation(AbstractMutationExecutor.java:108)
+	at app//org.hibernate.engine.jdbc.mutation.internal.MutationExecutorSingleNonBatched.performNonBatchedOperations(MutationExecutorSingleNonBatched.java:40)
+	at app//org.hibernate.engine.jdbc.mutation.internal.AbstractMutationExecutor.execute(AbstractMutationExecutor.java:52)
+	at app//org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:175)
+	at app//org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:113)
+	at app//org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2863)
+	at app//org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104)
+	at app//org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:632)
+	at app//org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:499)
+	at app//org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:363)
+	at app//org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:41)
+	at app//org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at app//org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407)
+	at app//org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:488)
+	at app//org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2329)
+	at app//org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1986)
+	at app//org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
+	at app//org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:169)
+	at app//org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:267)
+	at app//org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at app//org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	... 59 more
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '123' for key 'tbl_category.PRIMARY'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194)
+	... 80 more
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">N:1 연관관계 객체 그래프 탐색을 이용한 조회 테스트</td>
+<td class="success">manyToOneFindTest()</td>
+<td class="success">0.527s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">[1] menuCode=123, menuName=돈가스 스파게티, menuPrice=30000, categoryCode=123, categoryName=퓨전분식, orderableStatus=Y</td>
+<td class="failures">manyToOneInsertTest(int, String, int, int, String, String)[1]</td>
+<td class="failures">0.081s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">N:1 연관관계 객체지향쿼리(JPQL) 사용 카테고리 이름 조회 테스트</td>
+<td class="success">manyToOneJPQLFindTest()</td>
+<td class="success">0.291s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>16:39:50.558 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.ohgiraffers.associationmapping.section01.manytoone.ManyToOneAssociationTest]: ManyToOneAssociationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:39:50.676 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.ohgiraffers.associationmapping.Chap03AssociationMappingLectureSourceApplication for test class com.ohgiraffers.associationmapping.section01.manytoone.ManyToOneAssociationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.6)
+
+2024-06-10T16:39:51.041+09:00  INFO 20876 --- [    Test worker] c.o.a.s.m.ManyToOneAssociationTest       : Starting ManyToOneAssociationTest using Java 17.0.11 with PID 20876 (started by skyki in C:\lecture\13_jpa\chap03-association-mapping-lecture-source)
+2024-06-10T16:39:51.042+09:00  INFO 20876 --- [    Test worker] c.o.a.s.m.ManyToOneAssociationTest       : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-06-10T16:39:51.398+09:00  INFO 20876 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-10T16:39:51.418+09:00  INFO 20876 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+2024-06-10T16:39:51.735+09:00  INFO 20876 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-10T16:39:51.991+09:00  INFO 20876 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@599a9cb2
+2024-06-10T16:39:51.993+09:00  INFO 20876 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-10T16:39:52.033+09:00  INFO 20876 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-10T16:39:52.084+09:00  INFO 20876 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.8.Final
+2024-06-10T16:39:52.124+09:00  INFO 20876 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-10T16:39:52.395+09:00  INFO 20876 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-10T16:39:53.307+09:00  INFO 20876 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-10T16:39:53.309+09:00  INFO 20876 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-10T16:39:53.495+09:00  INFO 20876 --- [    Test worker] c.o.a.s.m.ManyToOneAssociationTest       : Started ManyToOneAssociationTest in 2.671 seconds (process running for 3.673)
+category = Category{categoryCode=12, categoryName='서양', refCategoryCode=3}
+2024-06-10T16:39:54.118+09:00  WARN 20876 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1062, SQLState: 23000
+2024-06-10T16:39:54.118+09:00 ERROR 20876 --- [    Test worker] o.h.engine.jdbc.spi.SqlExceptionHelper   : Duplicate entry '123' for key 'tbl_category.PRIMARY'
+서양
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at 2024. 6. 10. 오후 4:39:54</p>
+</div>
+</div>
+</body>
+</html>
